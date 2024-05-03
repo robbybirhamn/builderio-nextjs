@@ -1,0 +1,362 @@
+.header-background {
+    background: #222 no-repeat center center;
+    background-size: cover;
+}
+
+a {
+    color: #4A4A4A;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #111;
+}
+
+.vertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-nav.overlay .menu-button {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.main-nav.overlay a {
+    color: #fff;
+}
+
+.main-nav.overlay a:hover {
+    color: #222;
+    border-color: #fff;
+    background: #fff;
+}
+
+/* Create a bouncing scroll-down arrow on homepage with cover image */
+.scroll-down {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -16px;
+    width: 34px;
+    height: 34px;
+    font-size: 44px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-animation: bounce 4s 2s infinite;
+    animation: bounce 4s 2s infinite;
+}
+
+
+/* Stop it bouncing and increase contrast when hovered */
+.scroll-down:hover {
+    color: #fff;
+    -webkit-animation: none;
+    animation: none;
+}
+
+
+.pagination {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: 4rem auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #9EABB3;
+    text-align: center;
+}
+
+.page-title {
+    margin: 10px 0 10px 0;
+    font-size: 3rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+.scroll-down {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -16px;
+    width: 34px;
+    height: 34px;
+    font-size: 44px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-animation: bounce 4s 2s infinite;
+    animation: bounce 4s 2s infinite;
+}
+
+.post-title {
+    color: rgb(74, 74, 74)
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    margin: 1.75rem 0 0 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
+    line-height: 2.2rem;
+    color: #9EABB3;
+}
+
+.author-thumb {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 9px;
+    border-radius: 100%;
+}
+
+.post-date {
+    display: inline-block;
+    margin-left: 8px;
+    padding-left: 12px;
+    border-left: #d5dbde 1px solid;
+    text-transform: uppercase;
+    font-size: .8rem;
+    white-space: nowrap;
+}
+
+.post-content {
+    font-family: Merriweather, serif
+}
+
+.post {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+    border-bottom: #EBF2F6 1px solid;
+    word-wrap: break-word;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.page-description {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.page-number {
+    display: inline-block;
+    padding: 2px 0;
+    min-width: 100px;
+}
+
+
+.site-footer {
+    position: relative;
+    margin: 8rem 0 0 0;
+    padding: 0.5rem 15px;
+    /* border-top: #EBF2F6 1px solid; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.75em;
+    color: #BBC7CC;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.main-header {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5rem;
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.post-title a {
+    font-size: 2rem;
+}
+
+.main-nav {
+    position: relative;
+    padding: 35px 40px;
+    margin: 0 0 30px 0;
+}
+
+.main-nav.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media only screen and (max-width: 900px) {
+    .main-header {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        min-height: 240px;
+        height: 60vh;
+        padding: 15% 0;
+    }
+
+    .page-title {
+        font-size: 2.3rem;
+        letter-spacing: -1px;
+    }
+
+    .page-description {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+
+    .post-title a {
+        font-size: 2rem;
+    }
+
+    .main-header {
+        margin-bottom: 2rem;
+        ;
+    }
+
+    .post {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .post-meta {
+        font-size: .7rem;
+    }
+
+    .site-footer {
+        margin: 4rem 0 0 0;
+    }
+
+    .pagination {
+        margin: 2rem auto;
+    }
+
+    .post-date {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-header {
+        margin-bottom: 15px;
+        height: 40vh;
+    }
+
+    .main-nav {
+        padding: 15px 10px;
+    }
+
+    .main-nav.overlay .menu-button {
+        border-color: transparent;
+    }
+
+    .main-nav.overlay a {
+        color: #fff;
+        border-color: transparent;
+        background: transparent;
+    }
+
+    .cas-arrow-down {
+        display: none;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }
+
+    .page-description {
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+
+    .post {
+        width: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-bottom: 1rem;
+        line-height: 1.65em;
+    }
+
+    .pagination {
+        margin: 2rem auto;
+    }
+
+    .site-footer {
+        margin: 2rem 0 0 0
+    }
+
+    .post-title a {
+        font-size: 1.5rem;
+    }
+
+    .post-meta {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .post-date {
+        display: none;
+    }
+
+    .page-number {
+        font-size: .8rem;
+    }
+}
+
+.icon-github:before {
+    content: "\f200";
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "genericons", "Open Sans", sans-serif;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.blog-logo {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    height: 38px;
+    padding: 1px 0 5px 0;
+    width: auto;
+}

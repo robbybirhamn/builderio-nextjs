@@ -1,0 +1,95 @@
+
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+
+export default function About() {
+  return (
+    <div className="bg-white">
+      <div className="relative z-10 min-h-screen bg-white transition-transform duration-500 ease-in-out">
+        <header className=" h-[100vh] header-background main-header" style={{ backgroundImage: "url('/images/cover.jpg')" }}>
+          <nav className="main-nav overlay clearfix">
+            <a className="block float-left bg-none border-none" href="/">
+              <img src="/images/logo.png" alt="Blog Logo" />
+            </a>
+            <a className="box-border hover:bg-white inline-block float-right h-9 px-5 border border-gray-300 text-gray-500 text-center text-xs uppercase leading-9 whitespace-nowrap rounded bg-black bg-opacity-10 transition-all duration-500 ease-in-out icon-feed" href="http://feeds.feedburner.com/...">
+              &nbsp;&nbsp;Subscribe
+            </a>
+          </nav>
+
+          <div className="vertical ">
+            <div className="main-header-content inner">
+              <a className="bloglogo" href="https://github.com/vjeantet" target="_blank">
+                <span className="icon-github" style={{ color: "white", fontSize: "2em" }}></span>
+              </a>
+              &nbsp;
+              <a className="bloglogo" href="https://twitter.com/vjeantet" target="_blank">
+                <span className="icon-twitter" style={{ color: "white", fontSize: "2em" }}></span>
+              </a>
+              &nbsp;
+              <h1 className="page-title">Casper Theme</h1>
+              <h2 className="page-description">This is my description</h2>
+            </div>
+          </div>
+          <a className="scroll-down icon-arrow-left" href="#content">
+            <span className="hidden">Scroll Down</span>
+          </a>
+        </header>
+
+        <main id="content" className="content" role="main">
+
+
+          <article className="post post text-gray-500 max-w-[500px] mx-auto">
+            <header className="post-header text-gray-600">
+              <h2 className="post-title "><a href="/post/first/" >First Post</a></h2>
+            </header>
+            <section className="post-excerpt">
+              <p className="post-content">
+                Tristique integer nulla, velit orci elementum posuere odit urna amet, vel est amet etiam pharetra curabitur. Risus feugiat pharetra sit dui tempor sed, malesuada metus, ut sociis elementum, placerat dolor curabitur velit. Fermentum nulla, lacus volutpat, et neque suscipit vel nisl at, suspendisse sed consectetuer in. Donec ut tellus massa, ipsum placerat tincidunt, nam nunc amet sit aenean, eleifend porttitor non fermentum. Wisi ultricies ante nec ac dignissim, in neque suscipit eu blandit et, quis imperdiet
+                <a className="read-more" href="/post/first/">»</a>
+              </p>
+            </section>
+            <footer className="post-meta">
+              <img className="author-thumb" src="/images/logo.png" alt="Author image" />
+              Valère JEANTET
+              <time className="post-date" dateTime="2016-12-22T20:04:40Z">22 Dec 2016</time>
+            </footer>
+          </article>
+
+          <article className="post post text-gray-500 max-w-[500px] mx-auto">
+            <header className="post-header text-gray-600">
+              <h2 className="post-title "><a href="/post/first/" >Second Post</a></h2>
+            </header>
+            <section className="post-excerpt">
+              <p className="post-content">
+                Tristique integer nulla, velit orci elementum posuere odit urna amet, vel est amet etiam pharetra curabitur. Risus feugiat pharetra sit dui tempor sed, malesuada metus, ut sociis elementum, placerat dolor curabitur velit. Fermentum nulla, lacus volutpat, et neque suscipit vel nisl at, suspendisse sed consectetuer in. Donec ut tellus massa, ipsum placerat tincidunt, nam nunc amet sit aenean, eleifend porttitor non fermentum. Wisi ultricies ante nec ac dignissim, in neque suscipit eu blandit et, quis imperdiet.
+                <a className="read-more" href="/post/first/">»</a>
+              </p>
+            </section>
+            <footer className="post-meta">
+              <img className="author-thumb" src="/images/logo.png" alt="Author image" />
+              Valère JEANTET
+              <time className="post-date" dateTime="2016-12-22T20:04:40Z">22 Dec 2016</time>
+            </footer>
+          </article>
+
+
+
+          <nav className="relative w-[80%]  mx-auto pagination" role="navigation">
+            <span className="page-number ">Page 1 of 1</span>
+          </nav>
+        </main>
+
+        <footer className="site-footer clearfix flex justify-between">
+          <section className="block w-[45%] text-xs">
+            <a href="#" className=" text-xs">Casper Theme</a>
+          </section>
+          <section className="block w-[45%] text-right text-xs">
+            Proudly generated by <a className="icon-hugo text-xs" href="http://gohugo.io">HUGO</a>, with <a className="icon-theme  text-xs" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme
+          </section>
+        </footer>
+      </div>
+    </div>
+
+
+  );
+}
