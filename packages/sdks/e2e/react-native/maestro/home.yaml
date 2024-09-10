@@ -1,4 +1,0 @@
-appId: com.jabersami.myapp
----
-- launchApp
-- assertVisible: 'SDK Feature testing project'
